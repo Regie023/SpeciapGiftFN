@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>NoahSpecialGift</title> 
+  <meta https-equiv="X-UA-compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet"> 
+  <style>
+    
+   body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to top, #ffe9ec, #b4f0ff);
+      font-family: 'Press Start 2P', cursive;
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 20px;
+      color: #ff4c77;
+      text-shadow: 1px 1px 0 #fff;
+      animation: pop 1s ease-out;
+    }
+
+    .container {
+      margin-top: 30px;
+    }
+
+    .animal {
+      width: 100px;
+      height: auto;
+      margin: 30px;
+      display: inline-block;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-family: 'Press Start 2P', cursive;
+      background-color: #ff9fcb;
+      border: 2px solid #fff;
+      color: white;
+      cursor: pointer;
+      animation: pop 1s ease-out;
+    }
+
+    button:hover {
+      background-color: #ff4c77;
+    }
+
+    @keyframes pop {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .message, .cheer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ff4c77;
+      display: none;
+    }
+
+    .cheer {
+      font-size: 13px;
+    }
+
+    @keyframes glow {
+      0%, 100% { text-shadow: 0 0 5px #fff200; }
+      50% { text-shadow: 0 0 10px #ffce00; }
+    }
+
+    .bottom-text {
+      margin-top: 60px;
+      padding: 30px 20px;
+      font-size: 12px;
+      color: #555;
+      background: rgba(255,255,255,0.4);
+      border-top: 2px dashed #ffb6c1;
+    }
+
+    .food {
+      width: 80px;
+      height: auto;
+      margin: 30px;
+      display: inline-block;
+    }
+
+    .fruit {
+      width: 100px;
+      height: auto;
+      margin: 30px;
+      display: inline-block;
+    }
+  </style> 
+ </head> 
+ <body> 
+  <h1>☀️💖 Bonjour, Noah!</h1> 
+  <div class="container"> 
+   <img class="animal" src="https://media.tenor.com/D_lanvlgizMAAAAi/javier-guerrero-mew-pokemon-nintendo-pixel.gif" alt="pixel cat"> 
+   <img class="animal" src="https://media.tenor.com/DMPb6uZDcQIAAAAm/yay-cute.webp" alt="pixel dog"> 
+  </div> <button onclick="ShowGreet()">I hope 🌟 </button> 
+  <div class="message" id="greetMsg">
+   Have a wonderful day ahead! 🫂💗
+  </div> 
+  <br>
+  <br> <button onclick="ShowCheer()">Question❓</button> 
+  <div class="cheer" id="cheerMsg">
+    how are you?🙆‍♀️ and how was work yesterday?? any storiess?💗 
+  </div> 
+  <div class="bottom-text">
+    ✨ Sending hugss and good luck for todayy~ 
+   <br> eat well and stay safee Noahh! 🌤️🫂💞 
+  </div> 
+  <img class="food" src="https://media.tenor.com/0-M-_QQY4eQAAAAi/pixel-heart.gif" alt="food"> 
+  <img class="fruit" src="https://media.tenor.com/tNM-exbpePIAAAAi/fruit-fruits.gif" alt="fruit"> 
+  <div class="bottom-text">
+   I'll wait for ya, when u get home~ 💖
+  </div> <!-- Script diletakkan di akhir body --> 
+  <script>
+    function ShowGreet() {
+      document.getElementById("greetMsg").style.display = "block";
+    }
+
+    function ShowCheer() {
+      document.getElementById("cheerMsg").style.display = "block";
+    }
+  </script> 
+ 
+</body></html>
+
+    
+
+    
+ 
